@@ -1,8 +1,6 @@
 package asciiPanel;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class AsciiFontDrake_10x10 implements AsciiFont{
 
     @Override

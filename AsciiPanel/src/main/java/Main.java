@@ -2,12 +2,11 @@ import javax.swing.JFrame;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 import asciiPanel.AsciiPanel;
+import config.AsciiFontConfig;
 
 public class Main extends JFrame{
     /**
@@ -34,7 +33,7 @@ public class Main extends JFrame{
     
     public static void main(String[] args) {
 
-        ApplicationContext context = new ClassPathXmlApplicationContext("config-annotation.xml");
+        ApplicationContext context = new AnnotationConfigApplicationContext(AsciiFontConfig.class);
         AsciiPanel panel = context.getBean(AsciiPanel.class);
         Main app = new Main(panel);
         app.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

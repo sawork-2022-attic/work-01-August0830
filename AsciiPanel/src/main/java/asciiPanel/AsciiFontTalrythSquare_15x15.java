@@ -1,8 +1,6 @@
 package asciiPanel;
 
-import org.springframework.stereotype.Component;
 
-@Component
 public class AsciiFontTalrythSquare_15x15 implements AsciiFont{
 
     @Override

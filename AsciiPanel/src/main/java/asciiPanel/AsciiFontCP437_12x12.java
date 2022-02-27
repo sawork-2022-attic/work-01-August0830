@@ -1,8 +1,5 @@
 package asciiPanel;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class AsciiFontCP437_12x12 implements AsciiFont{
 
     @Override

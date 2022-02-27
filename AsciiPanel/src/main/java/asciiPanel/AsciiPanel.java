@@ -12,16 +12,14 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
+
 
 
 /**
  * This simulates a code page 437 ASCII terminal display.
  * @author Trystan Spangler
  */
-@Service
+
 public class AsciiPanel extends JPanel {
 	private static final long serialVersionUID = -4167851861147593092L;
 
@@ -311,8 +309,7 @@ public class AsciiPanel extends JPanel {
      * as the panel dimensions will most likely change
      * @param font
      */
-    @Autowired
-    @Qualifier("AsciiFontCP437_9x16")
+
     public void setAsciiFont (AsciiFont font)
     {
         if(this.asciiFont == font)

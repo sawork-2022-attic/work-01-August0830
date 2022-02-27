@@ -1,8 +1,8 @@
 package asciiPanel;
 
-import org.springframework.stereotype.Component;
 
-@Component
+
+
 public class AsciiFontCP437_10x10 implements AsciiFont{
 
     public String getFontFilename() {
